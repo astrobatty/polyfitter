@@ -47,8 +47,7 @@ Then after restarting your jupyter you'll be able to select this kernel.
 
 ## Example interactive usage
 
-To create your own photomery, you'll need a Target Pixel File, such as [this one.](https://github.com/zabop/autoeap/blob/master/examples/ktwo212466080-c17_lpd-targ.fits)
-Then, after starting Python, you can do:
+To fit a polynomial chain to the light curve of OGLE-BLG-ECL-040474:
 ```python
 from polyfitter import Polyfitter
 
@@ -56,8 +55,8 @@ import numpy as np
 
 # Parameters from OGLE database
 ID = 'OGLE-BLG-ECL-040474'
-P=1.8995918
-t0=7000.90650
+P  = 1.8995918
+t0 = 7000.90650
 
 # Load light curve from OGLE database
 # This is in magnitude scale
@@ -70,7 +69,7 @@ mag  = lc[1]
 err  = lc[2]
 
 # Create Polyfitter instance by setting the brightness scale of your data
-# Set "mag" or "flux" scale
+# Set scale to "mag" or "flux"
 pf = Polyfitter(scale='mag')
 
 # Run polynomial chain fitting
