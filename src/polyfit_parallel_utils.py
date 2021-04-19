@@ -883,17 +883,17 @@ def check_if_fit_is_above_data(polyfit,lc,t0,P):
 
 class Polyfitter:
     def __init__(self,scale=None,debug=False):
-    """
-    Class to perform polynomial chain fitting and
-    classification based on light curve morphology.
+        """
+        Class to perform polynomial chain fitting and
+        classification based on light curve morphology.
 
-    Parameters
-    ----------
-    scale : "mag" or "flux"
-        The scale of the input data that will be used with this instance.
-    debug : bool, default: False
-        If `True` each fit will be displayed with auxiliary messages.
-    """
+        Parameters
+        ----------
+        scale : "mag" or "flux"
+            The scale of the input data that will be used with this instance.
+        debug : bool, default: False
+            If `True` each fit will be displayed with auxiliary messages.
+        """
         if scale is None:
             raise KeyError('Please specify scale="flux" or "mag"')
         else:
@@ -925,46 +925,46 @@ class Polyfitter:
                     vertices=1000,
                     maxiters=4000,
                     timeout=100):
-    """
-    ``get_polyfit`` performs polynomial chain fitting by running
-    several fits parallel, then choosing the best one based on
-    Bayesian Information Criterion.
+        """
+        ``get_polyfit`` performs polynomial chain fitting by running
+        several fits parallel, then choosing the best one based on
+        Bayesian Information Criterion.
 
-    This code is built upon the original `polyfit` by
-    Prsa et al. (2008), ApJ 687, 542.
+        This code is built upon the original `polyfit` by
+        Prsa et al. (2008), ApJ 687, 542.
 
-    Parameters
-    ----------
-    time : array of floats
-        Time values.
-    flux : array of floats
-        Flux or magnitude values for every time point.
-    error : array of floats
-        Uncertainty on each flux or magnitude data point.
-    period: float
-        The orbital period of the binary star.
-    epoch : float
-        The epoch of the binary star.
-    verbose: int, 0 or 1, default: 1
-        If `0` the fits will be done silently.
-    vertices: int, default: 1000
-        Number of equidistant vertices in the computed fit.
-    maxiters: int, default: 4000
-        Maximum number of iterations.
-    timeout: seconds, default: 100
-        The time in seconds after a fit will be terminated.
+        Parameters
+        ----------
+        time : array of floats
+            Time values.
+        flux : array of floats
+            Flux or magnitude values for every time point.
+        error : array of floats
+            Uncertainty on each flux or magnitude data point.
+        period: float
+            The orbital period of the binary star.
+        epoch : float
+            The epoch of the binary star.
+        verbose: int, 0 or 1, default: 1
+            If `0` the fits will be done silently.
+        vertices: int, default: 1000
+            Number of equidistant vertices in the computed fit.
+        maxiters: int, default: 4000
+            Maximum number of iterations.
+        timeout: seconds, default: 100
+            The time in seconds after a fit will be terminated.
 
-    Returns
-    -------
-    t0new : float
-        The new epoch based on the minimum of the best polyfit.
-    phase : array of floats
-        Phase values of the best polyfit.
-    polyfit : array of floats
-        Flux/magnitude values of the best polyfit.
-    messages : list
-        The messages that the original `polyfit` would create during fitting.
-    """
+        Returns
+        -------
+        t0new : float
+            The new epoch based on the minimum of the best polyfit.
+        phase : array of floats
+            Phase values of the best polyfit.
+        polyfit : array of floats
+            Flux/magnitude values of the best polyfit.
+        messages : list
+            The messages that the original `polyfit` would create during fitting.
+        """
 
         # ----------- Prepare data ---------
         if self.scale=='mag':
