@@ -17,7 +17,7 @@ pkg-config --cflags --libs gsl
 
 To install the package clone this git and go the directory:
 ```bash
-git clone https://github.com/astrobatty/polyfitter+git
+git clone https://github.com/astrobatty/polyfitter.git
 
 cd ./polyfitter
 ```
