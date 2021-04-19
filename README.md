@@ -1,7 +1,7 @@
 [![Image](https://img.shields.io/badge/tutorials-%E2%9C%93-blue.svg)](https://github.com/astrobatty/polyfitter/tree/master/examples)
 <!--- [![Image](https://img.shields.io/badge/arXiv-1909.00446-blue.svg)](https://arxiv.org/abs/1909.00446) -->
 
-# polyfitter - Polynomial chain fitting and classification based on light curve morphology for binary stars.
+# polyfitter - Polynomial chain fitting and classification based on light curve morphology for binary stars
 
 The mathematical background of polynomial chain fitting (polyfit) is published in [Prša et al.,2008,ApJ,687,542](https://ui.adsabs.harvard.edu/abs/2008ApJ...687..542P/abstract).
 The paper that related to this code can be found [here](https://ui.adsabs.harvard.edu/abs/maybeoneday).
@@ -9,7 +9,7 @@ This code is built upon the original [polyfit](https://github.com/aprsa/polyfit)
 
 ## Installation
 
-This code depends on the GNU Scientific Library (GSL)[https://www.gnu.org/software/gsl/]. Before installation, make sure it is properly installed, e.g. running the following, which should return the location of the library:
+This code depends on the GNU Scientific Library [(GSL)](https://www.gnu.org/software/gsl/). Before installation, make sure it is properly installed, e.g. running the following, which should return the location of the library:
 
 ```bash
 pkg-config --cflags --libs gsl
@@ -17,7 +17,7 @@ pkg-config --cflags --libs gsl
 
 To install the package clone this git and go the directory:
 ```bash
-git clone https://github.com/astrobatty/polyfitter+git
+git clone https://github.com/astrobatty/polyfitter.git
 
 cd ./polyfitter
 ```
