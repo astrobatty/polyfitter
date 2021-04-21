@@ -10,11 +10,11 @@ This code is built upon the original [polyfit](https://github.com/aprsa/polyfit)
 
 ## Installation
 
-This code depends on the GNU Scientific Library [(GSL)](https://www.gnu.org/software/gsl/). Before installation, make sure it is properly installed, e.g. running the following, which should return the location of the library:
-
+This code depends on the GNU Scientific Library [(GSL)](https://www.gnu.org/software/gsl/) version>=2.6, which is available from [here](http://www.linuxfromscratch.org/blfs/view/svn/general/gsl.html). Before installation, make sure it is properly installed, e.g. running the followings, which should return the location of the library and the installed version of GSL:
 ```bash
-pkg-config --cflags --libs gsl
+pkg-config --cflags --libs gsl && gsl-config --version
 ```
+
 
 To install the package clone this git and go the directory:
 ```bash
