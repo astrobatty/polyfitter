@@ -1,5 +1,6 @@
 [![Image](https://img.shields.io/badge/tutorials-%E2%9C%93-blue.svg)](https://github.com/astrobatty/polyfitter/tree/master/examples)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/astrobatty/polyfitter/blob/master/examples/run_polyfit.ipynb)
+[![DOI](https://zenodo.org/badge/359579409.svg)](https://zenodo.org/badge/latestdoi/359579409)
 <!--- [![Image](https://img.shields.io/badge/arXiv-1909.00446-blue.svg)](https://arxiv.org/abs/1909.00446) -->
 
 # polyfitter - Polynomial chain fitting and classification based on light curve morphology for binary stars
