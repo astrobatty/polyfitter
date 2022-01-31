@@ -1,12 +1,12 @@
 [![Image](https://img.shields.io/badge/tutorials-%E2%9C%93-blue.svg)](https://github.com/astrobatty/polyfitter/tree/master/examples)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/astrobatty/polyfitter/blob/master/examples/run_polyfit.ipynb)
 [![DOI](https://zenodo.org/badge/359579409.svg)](https://zenodo.org/badge/latestdoi/359579409)
-<!--- [![Image](https://img.shields.io/badge/arXiv-1909.00446-blue.svg)](https://arxiv.org/abs/1909.00446) -->
+[![Image](https://img.shields.io/badge/arXiv-1909.00446-blue.svg)](https://arxiv.org/abs/2106.01039)
 
 # polyfitter - Polynomial chain fitting and classification based on light curve morphology for binary stars
 
 The mathematical background of polynomial chain fitting (polyfit) is published in [Prša et al.,2008,ApJ,687,542](https://ui.adsabs.harvard.edu/abs/2008ApJ...687..542P/abstract).
-The paper that related to this code can be found [here](https://ui.adsabs.harvard.edu/abs/maybeoneday).
+The paper that related to this code can be found [Bódi&Hajdu,2021,ApJS,255,1](https://ui.adsabs.harvard.edu/abs/2021ApJS..255....1B/abstract).
 This code is built upon the original [polyfit](https://github.com/aprsa/polyfit).
 
 ## Installation
@@ -121,8 +121,27 @@ The difference from using the code interactively is that you have to put your co
 Feel free to open PR / Issue.
 
 ## Citing
-If you find this code useful, please cite [X](https://ui.adsabs.harvard.edu/abs/maybeoneday), and [Prša et al.,2008,ApJ,687,542](https://ui.adsabs.harvard.edu/abs/2008ApJ...687..542P/abstract). Here are the BibTeX sources:
+If you find this code useful, please cite [Bódi&Hajdu,2021,ApJS,255,1](https://ui.adsabs.harvard.edu/abs/2021ApJS..255....1B/abstract), and [Prša et al.,2008,ApJ,687,542](https://ui.adsabs.harvard.edu/abs/2008ApJ...687..542P/abstract). Here are the BibTeX sources:
 ```
+@ARTICLE{2021ApJS..255....1B,
+       author = {{B{\'o}di}, A. and {Hajdu}, T.},
+        title = "{Classification of OGLE Eclipsing Binary Stars Based on Their Morphology Type with Locally Linear Embedding}",
+      journal = {\apjs},
+     keywords = {Eclipsing binary stars, Astronomy data analysis, Astronomy databases, 444, 1858, 83, Astrophysics - Solar and Stellar Astrophysics, Astrophysics - Instrumentation and Methods for Astrophysics},
+         year = 2021,
+        month = jul,
+       volume = {255},
+       number = {1},
+          eid = {1},
+        pages = {1},
+          doi = {10.3847/1538-4365/ac082c},
+archivePrefix = {arXiv},
+       eprint = {2106.01039},
+ primaryClass = {astro-ph.SR},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2021ApJS..255....1B},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
 @ARTICLE{2008ApJ...687..542P,
        author = {{Pr{\v{s}}a}, A. and {Guinan}, E.~F. and {Devinney}, E.~J. and {DeGeorge}, M. and {Bradstreet}, D.~H. and {Giammarco}, J.~M. and {Alcock}, C.~R. and {Engle}, S.~G.},
         title = "{Artificial Intelligence Approach to the Determination of Physical Properties of Eclipsing Binaries. I. The EBAI Project}",
